@@ -14,10 +14,56 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const siteUrl = 'https://www.citizenready.com.au';
+
 export const metadata: Metadata = {
-  title: 'CitizenReady — Australian Citizenship Test Practice',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'CitizenReady — Free Australian Citizenship Practice Test 2026',
+    template: '%s | CitizenReady',
+  },
   description:
-    'Prepare for your Australian Citizenship Test with CitizenReady. Practice all 77 official questions, track your progress, and gain confidence before your real test.',
+    'Free Australian citizenship practice test 2026. 97 questions from the official Our Common Bond book. Covers Australian values, history, government and democratic beliefs. Pass with confidence.',
+  keywords: [
+    'Australian citizenship practice test',
+    'free Australian citizenship test 2026',
+    'Australian citizenship test questions and answers',
+    'mock citizenship test Australia',
+    'Our Common Bond practice test',
+    'Department of Home Affairs citizenship practice',
+    'Australian values questions',
+    'Australian democratic beliefs test',
+    'Australian system of government practice',
+    '3 levels of government Australia quiz',
+    'Australian history test questions',
+    'Anzac Day history quiz',
+    'rule of law Australian values test',
+    'must pass Australian values quiz',
+  ],
+  authors: [{ name: 'CitizenReady' }],
+  creator: 'CitizenReady',
+  openGraph: {
+    type: 'website',
+    locale: 'en_AU',
+    url: siteUrl,
+    siteName: 'CitizenReady',
+    title: 'CitizenReady — Free Australian Citizenship Practice Test 2026',
+    description:
+      'Practice 97 questions from the official Our Common Bond book. Track your results and pass the Australian citizenship test with confidence.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'CitizenReady — Australian Citizenship Test Practice' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CitizenReady — Free Australian Citizenship Practice Test 2026',
+    description: 'Practice 97 questions from the official Our Common Bond book. Free, no sign-up required.',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-snippet': -1, 'max-image-preview': 'large' },
+  },
+  alternates: { canonical: siteUrl },
 };
 
 export default function RootLayout({
