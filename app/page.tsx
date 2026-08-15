@@ -62,7 +62,7 @@ export default function Home() {
             <span style={{ color: '#C9A84C' }}>Citizenship Test</span>
           </h1>
           <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-            Practice 97 citizenship test questions. Track your progress. Pass with confidence.
+            Practice citizenship test questions from all 4 official sections. Track your progress. Pass with confidence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -83,35 +83,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* App download banner */}
+      {/* App download banner — coming soon */}
       <section style={{ backgroundColor: '#C9A84C' }} className="py-5 px-4 text-center">
-        <p className="text-sm font-semibold mb-3" style={{ color: '#1B2A4A' }}>
-          📱 Best experienced on the app — study offline, track progress &amp; get haptic feedback
+        <p className="text-sm font-semibold mb-1" style={{ color: '#1B2A4A' }}>
+          📱 Better on the app — study offline, track progress &amp; get haptic feedback
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-          <a
-            href="https://apps.apple.com/app/citizenready"
-            aria-label="Download on the App Store"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80"
-            style={{ backgroundColor: '#1B2A4A', color: '#FFFFFF' }}
-          >
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-            </svg>
-            App Store
-          </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.citizenready"
-            aria-label="Get it on Google Play"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80"
-            style={{ backgroundColor: '#1B2A4A', color: '#FFFFFF' }}
-          >
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-              <path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/>
-            </svg>
-            Google Play
-          </a>
-        </div>
+        <p className="text-xs mb-3" style={{ color: 'rgba(27,42,74,0.7)' }}>
+          iOS &amp; Android apps coming soon
+        </p>
+        <a
+          href="mailto:hello@citizenready.com.au?subject=Notify me when the app launches"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80"
+          style={{ backgroundColor: '#1B2A4A', color: '#FFFFFF' }}
+        >
+          🔔 Notify Me at Launch
+        </a>
       </section>
 
       {/* Stats bar */}
@@ -119,11 +105,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-around gap-4 text-white text-center">
           <div>
             <p className="text-3xl font-bold" style={{ color: '#C9A84C' }}>97</p>
-            <p className="text-sm text-white/80">Practice Questions</p>
+            <p className="text-sm text-white/80">Question Bank</p>
           </div>
           <div>
-            <p className="text-3xl font-bold" style={{ color: '#C9A84C' }}>3</p>
-            <p className="text-sm text-white/80">Test Sections</p>
+            <p className="text-3xl font-bold" style={{ color: '#C9A84C' }}>4</p>
+            <p className="text-sm text-white/80">Official Sections</p>
           </div>
           <div>
             <p className="text-3xl font-bold" style={{ color: '#C9A84C' }}>75%</p>
@@ -142,8 +128,8 @@ export default function Home() {
             {[
               {
                 icon: '📚',
-                title: '97 Practice Questions',
-                desc: 'Comprehensive question bank covering all sections of the official Australian citizenship test resource book.',
+                title: 'Full Question Bank',
+                desc: '97 practice questions across all 4 official sections of the Australian Citizenship: Our Common Bond resource book.',
               },
               {
                 icon: '📊',
